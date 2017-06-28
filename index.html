@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GSTR-1</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
+    </head>
+    
+<body>    
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <div class="md-col-xs-8 text-center "><h2 class="panel-title" >Form GSTR-1</h2></div>
+    </div>
+<div class="panel-body">
+   <div  class="panel panel-primary">
+    <div class="card step-progress">
+    <div class="step-slider">
+      <div data-id="step1" class="step-slider-item"></div>
+      <div data-id="step2" class="step-slider-item"></div>
+      <div data-id="step3" class="step-slider-item"></div>
+      <div data-id="step4" class="step-slider-item"></div>
+      <div data-id="step5" class="step-slider-item"></div>
+      <div data-id="step6" class="step-slider-item"></div>
+      <div data-id="step7" class="step-slider-item"></div>
+      <div data-id="step8" class="step-slider-item"></div>
+      <div data-id="step9" class="step-slider-item"></div>
+      <div data-id="step10" class="step-slider-item"></div>
+      <div data-id="step11" class="step-slider-item"></div>
+      <div data-id="step12" class="step-slider-item"></div>
+      <div data-id="step13" class="step-slider-item"></div>
+      <div data-id="step14" class="step-slider-item"></div>
+    </div>
+    <div class="step-content">
+        <div id="stepLast" class="step-content-body out"> <div class="md-col-xs-8 text-center "><h3>Completed !</h3></div></div>
+         <div class="step-content-foot">
+             <button type="button" id="FloatLeft" class="active" name="prev">Previous</button>
+             <button type="button" id="FloatRight" class="active" name="next">Forward</button>
+             <button type="button" id="FloatRight" class="active out" name="finish">Finish</button>
+         </div>
+  <div class="padding">
+    <div id="step1" class="step-content-body">
+          <div class="panel panel-success">
+            <div class="panel-heading"><h3 class="panel-title">Details Of Outward Suppliers</h3></div>
+              <form>
+              <div class="panel-body">
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" ></span>
+                        <input type="text" class="form-control" placeholder="GSTIN" >
+                        <span class="input-group-addon" id="basic-addon1">    </span>
+                        <input type="text" class="form-control" placeholder="Name Of the Taxable Person" >
+                  </div>
+                  </div>
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="text" class="form-control" placeholder="Aggregate Turnover Of The Taxable Person in Previous FY" >
+                  </div>
+                  </div>
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> Period: </span>
+                        <input type="text" class="form-control" placeholder="Month" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                        <input type="text" class="form-control" placeholder="Year" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+                </div>
+            </form>
+          </div>
+    </div>
+      <div id="step2" class="step-content-body out">
+       <form>
+        <div class="panel panel-success">
+           <div class="panel-heading"><h3 class="panel-title">Taxable Outward Supplies To a Registered Person</h3></div>
+              <div class="panel-body">
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" ></span>
+                        <input type="text" class="form-control" placeholder="GSTIN/UIN" >
+                  </div>
+                  </div> 
+                  <div class="md-col-xs-8 text-center ">INVOICE:</div>
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" ></span>
+                        <input type="text" class="form-control" placeholder="No." >
+                        <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="date" class="form-control" placeholder="Date"  >
+                        <span class="input-group-addon" ></span>
+                        <input type="text" class="form-control" placeholder="Value" >
+                 </div>
+                 </div>
+                 <div class="row">
+                 <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                      <input type="text" class="form-control" placeholder="Goods/Services" >
+                      <span class="input-group-addon" ></span>
+                      <input type="text" class="form-control" placeholder="HSN/SAC" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                      <input type="text" class="form-control" placeholder="Taxable Value" >
+                 </div>
+                 </div>
+                 <div class="row">
+                 <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> IGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                        <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div>  
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> CGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                        <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> SGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                        <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+                  <div class="md-col-xs-8 text-center ">POS</div>
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="text" class="form-control" placeholder="Only If Different" >
+                  </div>
+                  </div> 
+            </div>
+           </div>
+         </form>
+     </div>
+    <div id="step3" class="step-content-body out"><div>
+        <form>
+         <div class="panel panel-success">
+            <div class="panel-heading"><h3 class="panel-title">Taxable outward supplies to a consumer where Place of Supply (State Code) is other than the state where supplier is located (Inter-state supplies) and Invoice value is more than &#8377;2.5 lakhs</h3></div>
+                 <div class="panel-body">
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="text" class="form-control" placeholder="Recipients State Code" >
+                        <span class="input-group-addon" id="basic-addon1">    </span>
+                        <input type="text" class="form-control" placeholder="Name Of The Recipient" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+                  <div class="md-col-xs-8 text-center ">INVOICE:</div>
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" ></span>
+                        <input type="text" class="form-control" placeholder="No." >
+                        <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="date" class="form-control" placeholder="Date" >
+                        <span class="input-group-addon" ></span>
+                        <input type="text" class="form-control" placeholder="Value" >
+                 </div>
+                 </div>
+                 <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                      <input type="text" class="form-control" placeholder="Goods/Services" >
+                      <span class="input-group-addon" ></span>
+                      <input type="text" class="form-control" placeholder="HSN/SAC" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                      <input type="text" class="form-control" placeholder="Taxable Value" >
+                 </div>
+                 </div>
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> IGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                       <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+                  <div class="md-col-xs-8 text-center ">POS</div>
+                     <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="text" class="form-control" placeholder="Only If Different" >
+                     </div>
+                </div>
+            </div>
+          </form>
+        </div></div>
+      <div id="step4" class="step-content-body out">
+        <form>
+          <div class="panel panel-success">
+            <div class="panel-heading"><h3 class="panel-title">Taxable outward supplies to consumer (Other than 6 above)</h3></div>
+             <div class="panel-body">
+                <div class="row">
+                <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">  </span>
+                      <input type="text" class="form-control" placeholder="Goods/Services" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="HSN/SAC" aria-describedby="basic-addon1">
+                </div>
+                </div> 
+                <div class="row">
+                <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">  </span>
+                        <input type="text" class="form-control" placeholder="Staff Code(Place Of Supply)" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Aggregate Taxable Value" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                 
+                 <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> IGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div>  
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> CGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> SGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                 
+                 
+             </div>
+            </div>
+            
+            
+          
+          
+        </form>
+        
+        </div>
+      <div id="step5" class="step-content-body out">
+        
+        <form>
+          
+          <div class="panel panel-success">
+            <div class="panel-heading"><h3 class="panel-title">Details of Credit/Credit Notes</h3></div>
+           <div class="panel-body">
+               
+               
+               <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">  </span>
+                        <input type="text" class="form-control" placeholder="GSTIN/UIN/Name Of Recipient" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Type Of Note(Debit/Credit)" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+         
+              
+              <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> Debit Note/Credit Note </span>
+                        <input type="text" class="form-control" placeholder="No." >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="date" class="form-control" placeholder="Date" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+               
+               <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> Original Invoice </span>
+                        <input type="text" class="form-control" placeholder="No." >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="date" class="form-control" placeholder="Date" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+               
+               
+               <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> </span>
+                        <input type="text" class="form-control" placeholder="Differential Value" >
+                  
+                
+                  </div>
+                  </div>
+               <div class="md-col-xs-8 text-center ">Differential Tax</div>
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> IGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div>  
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> CGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> SGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+               </div>
+            </div>
+          </form>
+         </div>
+      <div id="step6" class="step-content-body out">
+        
+        <form>
+        <div class="panel panel-success">
+          <div class="panel-heading"><h3 class="panel-title">Nill rated, Excempted and Non GST outward supplies</h3></div>
+           <div class="panel-body">
+    
+               
+                <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> Interstate  supplies  to registered person:</span>
+                        <input type="text" class="form-control" placeholder="Goods Services" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Nil Rated" aria-describedby="basic-addon1">
+                      
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Exempted" aria-describedby="basic-addon1">  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Non GST supplies" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+               <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> Intrastate  supplies  to registered person:</span>
+                        <input type="text" class="form-control" placeholder="Goods Services" >
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Nil Rated" aria-describedby="basic-addon1">
+                      
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Exempted" aria-describedby="basic-addon1">  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Non GST supplies" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+               <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> Interstate supplies to consumers :</span>
+                        <input type="text" class="form-control" placeholder="Goods Services" >
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Nil Rated" aria-describedby="basic-addon1">
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Exempted" aria-describedby="basic-addon1">  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Non GST supplies" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+               <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> Intrastate supplies to consumers :</span>
+                        <input type="text" class="form-control" placeholder="Goods Services" >
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Nil Rated" aria-describedby="basic-addon1">
+                      
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Exempted" aria-describedby="basic-addon1">  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Non GST supplies" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+               </div>
+          </div>
+       </form>
+      </div>
+      <div id="step7" class="step-content-body out">
+      <form>
+        <div class="panel panel-success">
+          <div class="panel-heading"><h3 class="panel-title">Supplies Exported (including deemed exports)</h3></div>
+            <div class="panel-body">
+               <div class="md-col-xs-8 text-center "></div>
+                <div class="md-col-xs-8 text-center ">INVOICE:</div>
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" ></span>
+                        <input type="text" class="form-control" placeholder="No." >
+                        <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="date" class="form-control" placeholder="Date" >
+                        <span class="input-group-addon" ></span>
+                        <input type="text" class="form-control" placeholder="Value" >
+                 </div>
+                 </div>
+                 <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                      <input type="text" class="form-control" placeholder="Goods/Services" >
+                      <span class="input-group-addon" ></span>
+                      <input type="text" class="form-control" placeholder="HSN/SAC" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                      <input type="text" class="form-control" placeholder="Taxable Value" >
+                 </div>
+                 </div>
+                    <div class="md-col-xs-8 text-center ">Shipping Bill</div>
+                <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> </span>
+                        <input type="text" class="form-control" placeholder="No." >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="date" class="form-control" placeholder="Date" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+                
+                <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> IGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                       <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div>  
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> CGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> SGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                       <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+                </div>
+            </div>  
+          </form>
+        </div>
+      <div id="step8" class="step-content-body out">
+       <form>
+       <div class="panel panel-success">
+       <div class="panel-heading"><h3 class="panel-title">Tax liability arising on account of time of supply without inssuanc of Invoice in the same period.</h3></div>
+          <div class="panel-body">
+                    <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="text" class="form-control" placeholder="GSTIN/UIN/Name Of the Customer" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="State Code" aria-describedby="basic-addon1">
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Dcument No." aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="date" class="form-control" placeholder="Date" >
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Goods and Services" aria-describedby="basic-addon1">
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="HSN/SAC of Supply" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+              
+              <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> IGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div>  
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> CGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                       <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+             </div>
+    </div>      
+    </form>    
+   </div>
+      <div id="step9" class="step-content-body out">
+       <form>
+        <div class="panel panel-success">
+            <div class="panel-heading"><h3 class="panel-title">Tax already paid (on advance receipt/on account of time of supply) on invoice in the current period</h3></div>
+             <div class="panel-body">
+              <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="text" class="form-control" placeholder="Invoice No." >
+                        <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Transaction ID(A Number assigned by system When Tax is Paid)" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+                 <div class="md-col-xs-8 text-center ">Tax paid on receipt of advance/on account of time of supply</div>
+                 <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> IGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Tax" aria-describedby="basic-addon1">
+                  </div>
+                  </div>  
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> CGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Tax" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                  </div>
+             </div>  
+          </form>
+    </div>
+      <div id="step10" class="step-content-body out">
+       <form>
+        <div class="panel panel-success">
+         <div class="panel-heading"><h3 class="panel-title">Supplies made through e-commerce portals of other companies<br>Part 1 : Supplies made through e-commerce portals of other companies to registered taxable person</h3></div>
+           <div class="panel-body">
+            <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="text" class="form-control" placeholder="Invoice No." >
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="date" class="form-control" placeholder="Date" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> </span>
+                        <input type="text" class="form-control" placeholder="Merchand ID issued by E-commerce Operatore" >
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="GSTIN of E-commerece Portal" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+               <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="text" class="form-control" placeholder="Gross Values Of Supplies" >
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Taxable Value" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+               <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> </span>
+                        <input type="text" class="form-control" placeholder="Goods/Services" >
+                   <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="HSN/SAC" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+               <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> IGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                   <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+               <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> CGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+               </div>
+        </div>  
+         </form>
+       </div>
+      <div id="step11" class="step-content-body out">
+        
+        <form>
+         <div class="panel panel-success">
+           <div class="panel-heading"><h3 class="panel-title">Part II: Supplies made through e-commerce portals of other companies to unregistered taxable person</h3></div>
+             <div class="panel-body">
+    
+                 <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">  </span>
+                        <input type="text" class="form-control" placeholder="SrNo." >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Merchant ID issued by E-commerce Portal" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                 
+                 <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">  </span>
+                        <input type="text" class="form-control" placeholder="GSTIN of E-commerce Portal" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Place Of Supply(State code)" aria-describedby="basic-addon1">
+                      <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Taxable Value" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                 <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> </span>
+                        <input type="text" class="form-control" placeholder="Gross Values Of supply" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Taxable Value" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+                 
+                 <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> IGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+               
+               <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> CGST </span>
+                        <input type="text" class="form-control" placeholder="Rate" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                 
+             </div>
+         </div> 
+          
+        </form>
+        
+        
+        
+        </div>
+      <div id="step12" class="step-content-body out">
+     <form>
+          
+     <div class="panel panel-success">
+      <div class="panel-heading"><h3 class="panel-title">Invoice issued during the tax period including invoices issued in case of inward supplies received from unregistered person liable for charge</h3></div>
+        <div class="panel-body">
+                   <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"></span>
+                        <input type="text" class="form-control" placeholder="SrNo." >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="Series Number Of Invoice" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+            
+            
+                           <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> </span>
+                        <input type="text" class="form-control" placeholder="From" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="To" aria-describedby="basic-addon1">
+                      
+                      <span class="input-group-addon" id="basic-addon1"> </span>
+                        <input type="text" class="form-control" placeholder="Total Invoices" >
+                  
+                      
+                  
+                  <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="text" class="form-control" placeholder="# Cancelled Invoices" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+        </div>
+     </div>     
+          
+     </form>   
+        
+        
+        
+        
+     </div>
+      <div id="step13" class="step-content-body out">
+     <form>
+      <div class="panel panel-success">
+          <div class="panel-heading"><h3 class="panel-title">Declaration</h3></div>
+             <div class="panel-body">
+    I hereby declare that the information given in this statement is true, correct and complete in every respect.
+I further dclare that i have authority to sumit this statement.
+                  <div class="row">
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"> </span>
+                        <input type="text" class="form-control" placeholder="Place" >
+                       <span class="input-group-addon" id="basic-addon1">    </span>
+                     <input type="date" class="form-control" placeholder="Date" aria-describedby="basic-addon1">
+                  </div>
+                  </div> 
+                 </div>
+      </div>    
+      </form>  
+    </div>
+<div id="step14" class="step-content-body out">
+      <form>
+      <div class="panel panel-success">
+         <div class="panel-heading"><h3 class="panel-title">Instructions for furnishing the information.</h3></div>
+           <div class="panel-body">
+               <div ><h4>1-Terms used</h4></div>
+               <div>GSTIN: Goods and Services Taxable Person Identification Number <br>
+                UIN: Unique Identity Number for embassies.<br>
+                HSN: Harmonized System of Nomenclature for goods<br>
+                SAC: Service Accounting Code<br>
+                POS: Place of Supply (State Code) of goods or services – State Code to be mentioned.</div>
+                <div ><h4>2-To be furnished by 10th of month succeding tax period.</h4></div>
+               <div ><h4>3-Aggregate Turnover means as defined under GST Act</h4></div>
+               <div ><h4>4-HSN/SAC is not mandatory for taxable person whose aggregate turnover is lesst than 1.5 Crores</h4></div>
+           </div>
+      </div>    
+    </form>  
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <div class="md-col-xs-8 text-center ">    
+        <div class="panel-footer">@GSTEdge2017</div>
+    </div>    
+</div>
+</body>    
+</html>
